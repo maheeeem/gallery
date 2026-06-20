@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Elegance Gallery</h1>
+            <p>Curated Visual Collection</p>
+        </header>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="minimal">Minimal</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery">
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=600&h=400&fit=crop" alt="Modern Architecture">
+                <div class="overlay">
+                    <h3>Modern Architecture</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=400&fit=crop" alt="Mountain Landscape">
+                <div class="overlay">
+                    <h3>Mountain Landscape</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="minimal">
+                <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600&h=400&fit=crop" alt="Minimal Composition">
+                <div class="overlay">
+                    <h3>Minimal Composition</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&h=400&fit=crop" alt="Abstract Art">
+                <div class="overlay">
+                    <h3>Abstract Art</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&h=400&fit=crop" alt="Geometric Structure">
+                <div class="overlay">
+                    <h3>Geometric Structure</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Serene Lake">
+                <div class="overlay">
+                    <h3>Serene Lake</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="minimal">
+                <img src="https://images.unsplash.com/photo-1507643179173-617d6c258001?w=600&h=400&fit=crop" alt="Clean Lines">
+                <div class="overlay">
+                    <h3>Clean Lines</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&h=400&fit=crop" alt="Color Study">
+                <div class="overlay">
+                    <h3>Color Study</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop" alt="Urban Design">
+                <div class="overlay">
+                    <h3>Urban Design</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop" alt="Forest Light">
+                <div class="overlay">
+                    <h3>Forest Light</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="minimal">
+                <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600&h=400&fit=crop" alt="Simple Form">
+                <div class="overlay">
+                    <h3>Simple Form</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?w=600&h=400&fit=crop" alt="Texture Pattern">
+                <div class="overlay">
+                    <h3>Texture Pattern</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600&h=400&fit=crop" alt="Contemporary Building">
+                <div class="overlay">
+                    <h3>Contemporary Building</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop" alt="Natural Harmony">
+                <div class="overlay">
+                    <h3>Natural Harmony</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="minimal">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Monochrome">
+                <div class="overlay">
+                    <h3>Monochrome</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=600&h=400&fit=crop" alt="Flowing Shapes">
+                <div class="overlay">
+                    <h3>Flowing Shapes</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=600&h=400&fit=crop" alt="Structural Detail">
+                <div class="overlay">
+                    <h3>Structural Detail</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=600&h=400&fit=crop" alt="Ocean View">
+                <div class="overlay">
+                    <h3>Ocean View</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="minimal">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=600&h=400&fit=crop" alt="Negative Space">
+                <div class="overlay">
+                    <h3>Negative Space</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&h=400&fit=crop" alt="Light Play">
+                <div class="overlay">
+                    <h3>Light Play</h3>
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <button class="nav-btn prev-btn" onclick="navigateImage(-1)">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+            </div>
+        </div>
+        <button class="nav-btn next-btn" onclick="navigateImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
